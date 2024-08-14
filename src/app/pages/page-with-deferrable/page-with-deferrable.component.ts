@@ -28,6 +28,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './page-with-deferrable.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PageWithDeferrableComponent {
+export default class PageWithDeferrableComponent {
   customCondition = false;
 }

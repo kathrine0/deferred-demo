@@ -28,7 +28,8 @@
             "scripts": [],
             "loader": {
               ".jpg": "file"
-            }
+            },
+            "statsJson": true
           },
           "configurations": {
             "production": {
