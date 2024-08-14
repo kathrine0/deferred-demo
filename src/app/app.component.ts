@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'deferred-demo';
+  pages = [
+    { name: 'Eager Page', link: '/eager-page' },
+    { name: 'Lazy Page', link: '/lazy-page' },
+    { name: 'Page With Deferrable', link: '/page-with-deferrable' }
+  ]
 }
