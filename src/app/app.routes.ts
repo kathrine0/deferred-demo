@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { EagerPageComponent } from './pages/eager-page/eager-page.component';
+import { PageWithDeferrableComponent } from './pages/page-with-deferrable/page-with-deferrable.component';
 
 export const routes: Routes = [
   {
@@ -12,7 +13,6 @@ export const routes: Routes = [
   },
   {
     path: 'page-with-deferrable',
-    loadComponent: () =>
-      import('./pages/page-with-deferrable/page-with-deferrable.component').then(c => c.PageWithDeferrableComponent),
+    component: PageWithDeferrableComponent
   },
 ];
