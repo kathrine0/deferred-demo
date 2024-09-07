@@ -8,4 +8,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './lazy-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class LazyPageComponent { }
+export class LazyPageComponent { }

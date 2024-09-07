@@ -8,11 +8,11 @@ export const routes: Routes = [
   },
   {
     path: 'lazy-page',
-    loadComponent: () => import('./pages/lazy-page/lazy-page.component'),
+    loadComponent: () => import('./pages/lazy-page/lazy-page.component').then(c => c.LazyPageComponent),
   },
   {
     path: 'page-with-deferrable',
     loadComponent: () =>
-      import('./pages/page-with-deferrable/page-with-deferrable.component'),
+      import('./pages/page-with-deferrable/page-with-deferrable.component').then(c => c.PageWithDeferrableComponent),
   },
 ];
