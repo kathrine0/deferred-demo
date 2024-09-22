@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FatCatComponent } from '../../components/fat-cat/fat-cat.component';
+import { BarChartComponent } from '../../components/bar-chart/bar-chart.component';
 @Component({
   selector: 'app-page-with-deferrable',
   standalone: true,
-  imports: [FatCatComponent],
+  imports: [BarChartComponent],
   templateUrl: './page-with-deferrable.component.html',
   styleUrl: './page-with-deferrable.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
