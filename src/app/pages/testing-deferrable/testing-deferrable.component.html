@@ -1,7 +1,7 @@
 @defer () {
-<app-bar-chart />
+<app-fat-cat data-test-id="deferred-element"></app-fat-cat>
 } @placeholder {
-<span>placeholder</span>
+<app-placeholder data-test-id="placeholder" [type]="'image'"></app-placeholder>
 } @loading {
-<span>loading...</span>
-}
+<app-loading data-test-id="loader"></app-loading>
+} @error { }

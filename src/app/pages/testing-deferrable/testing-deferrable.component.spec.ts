@@ -31,7 +31,7 @@ describe('PageWithDeferrableComponent', () => {
   });
 
   it('should render bar chart', async () => {
-    const barChart = fixture.nativeElement.querySelector('app-bar-chart');
+    const barChart = fixture.nativeElement.querySelector('[data-test-id="deferred-element"]');
     expect(barChart).toBeTruthy();
   });
 });
