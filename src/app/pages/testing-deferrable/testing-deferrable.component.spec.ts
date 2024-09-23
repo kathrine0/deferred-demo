@@ -30,8 +30,8 @@ describe('PageWithDeferrableComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render bar chart', async () => {
-    const barChart = fixture.nativeElement.querySelector('[data-test-id="deferred-element"]');
-    expect(barChart).toBeTruthy();
+  it('should render deferred element', async () => {
+    const element = fixture.nativeElement.querySelector('[data-test-id="deferred-element"]');
+    expect(element).toBeTruthy();
   });
 });
