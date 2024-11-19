@@ -1,0 +1,13 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: #F53844;
+  }
+}

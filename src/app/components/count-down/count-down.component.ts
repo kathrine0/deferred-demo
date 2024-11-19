@@ -11,7 +11,7 @@ import { filter, take } from 'rxjs';
   selector: 'app-count-down',
   standalone: true,
   imports: [],
-  template: `{{ currentCount() }}`,
+  template: `<h1>{{ currentCount() }}</h1>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CountDownComponent {

@@ -31,7 +31,7 @@ import {
 export class PlaceholderComponent {
   width = input(300);
   height = input(150);
-  type = input.required<'barChart' | 'polarChart' | 'image'>();
+  type = input<'barChart' | 'polarChart' | 'image'>('barChart');
 
   path = computed(() => {
     switch (this.type()) {
