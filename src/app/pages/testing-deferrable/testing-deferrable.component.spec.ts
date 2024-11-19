@@ -31,7 +31,10 @@ describe('PageWithDeferrableComponent', () => {
   });
 
   it('should render deferred element', async () => {
-    const element = fixture.nativeElement.querySelector('[data-test-id="deferred-element"]');
+    // await deferredBlockFixture.render(DeferBlockState.Complete);
+    const element = fixture.nativeElement.querySelector(
+      '[data-test-id="deferred-element"]',
+    );
     expect(element).toBeTruthy();
   });
 });

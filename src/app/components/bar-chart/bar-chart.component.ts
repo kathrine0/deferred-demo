@@ -48,7 +48,7 @@ export class BarChartComponent implements AfterViewInit {
           label: 'My beautiful colors',
           data: [...Array(5)].map(() => getRandomNumber(5, 50)),
           backgroundColor: randomLabels.map(
-            ({ backgroundColor }) => backgroundColor
+            ({ backgroundColor }) => backgroundColor,
           ),
           borderColor: randomLabels.map(({ borderColor }) => borderColor),
           borderWidth: 1,

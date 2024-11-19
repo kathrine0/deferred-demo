@@ -9,9 +9,7 @@ import {
   selector: 'app-placeholder',
   standalone: true,
   imports: [],
-  template: `<div
-    class="placeholder"
-  >
+  template: `<div class="placeholder">
     <svg
       fill="gray"
       stroke="gray"

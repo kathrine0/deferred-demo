@@ -9,10 +9,13 @@ export const routes: Routes = [
   },
   {
     path: 'lazy-page',
-    loadComponent: () => import('./pages/lazy-page/lazy-page.component').then(c => c.LazyPageComponent),
+    loadComponent: () =>
+      import('./pages/lazy-page/lazy-page.component').then(
+        (c) => c.LazyPageComponent,
+      ),
   },
   {
     path: 'page-with-deferrable',
-    component: PageWithDeferrableComponent
+    component: PageWithDeferrableComponent,
   },
 ];

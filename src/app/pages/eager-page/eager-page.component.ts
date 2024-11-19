@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-eager-page',
   standalone: true,
   imports: [],
-  templateUrl: './eager-page.component.html',
+  template: `<p>eager-page works!</p>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EagerPageComponent {}

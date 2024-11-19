@@ -17,12 +17,16 @@ interface FoxImage {
   selector: 'app-random-fox',
   standalone: true,
   imports: [],
-  template: ` @if(foxImage()) {<img
-      [style.maxWidth]="'100%'"
-      [style.maxHeight]="'100%'"
-      [src]="foxImage()"
-      alt="Random fox image"
-    />} @else { loading fox image... }`,
+  template: ` @if (foxImage()) {
+      <img
+        [style.maxWidth]="'100%'"
+        [style.maxHeight]="'100%'"
+        [src]="foxImage()"
+        alt="Random fox image"
+      />
+    } @else {
+      loading fox image...
+    }`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RandomFoxComponent implements OnInit {

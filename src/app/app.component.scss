@@ -1,11 +1,10 @@
-
 header {
   background-color: #d7e3ff;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #001B3F;
+  color: #001b3f;
 }
 
 h1 {
@@ -34,11 +33,11 @@ nav {
     font-weight: 500;
 
     &.active {
-      background-color: #B2CBF4;
+      background-color: #b2cbf4;
     }
 
     &:hover {
-      background-color: #B2CBF4;
+      background-color: #b2cbf4;
     }
   }
 }

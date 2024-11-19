@@ -4,7 +4,13 @@ import { BarChartComponent } from '../../components/bar-chart/bar-chart.componen
   selector: 'app-page-with-deferrable',
   standalone: true,
   imports: [BarChartComponent],
-  templateUrl: './page-with-deferrable.component.html',
+  template: `
+    <section class="elements">
+      <div>
+        <app-bar-chart />
+      </div>
+    </section>
+  `,
   styleUrl: './page-with-deferrable.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

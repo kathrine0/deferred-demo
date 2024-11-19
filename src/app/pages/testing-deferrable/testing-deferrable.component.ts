@@ -5,12 +5,19 @@ import { PlaceholderComponent } from '../../components/placeholder/placeholder.c
 @Component({
   selector: 'app-page-with-deferrable',
   standalone: true,
-  imports: [
-    PlaceholderComponent,
-    LoadingComponent,
-    FatCatComponent,
-  ],
-  templateUrl: './testing-deferrable.component.html',
+  imports: [PlaceholderComponent, LoadingComponent, FatCatComponent],
+  template: `
+    @defer {
+      <app-fat-cat data-test-id="deferred-element"></app-fat-cat>
+    } @placeholder {
+      <app-placeholder
+        data-test-id="placeholder"
+        [type]="'image'"
+      ></app-placeholder>
+    } @loading {
+      <app-loading data-test-id="loader"></app-loading>
+    } @error {}
+  `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TestingDeferrableComponent {}

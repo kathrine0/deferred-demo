@@ -36,6 +36,5 @@ export const colorsMap = [
     label: 'Grey',
     backgroundColor: `rgba(201, 203, 207, ${bgOpacity})`,
     borderColor: `rgba(201, 203, 207, ${borderOpacity})`,
-  }
+  },
 ];
-

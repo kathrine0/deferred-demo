@@ -3,14 +3,14 @@
   <nav>
     <ul>
       @for (page of pages; track $index) {
-      <li>
-        <a
-          [routerLink]="page.link"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >{{ page.name }}</a
-        >
-      </li>
+        <li>
+          <a
+            [routerLink]="page.link"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >{{ page.name }}</a
+          >
+        </li>
       }
       <li>
         <a href="/">🔄</a>
