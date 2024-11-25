@@ -6,12 +6,9 @@ import { BarChartComponent } from '../../components/bar-chart/bar-chart.componen
   imports: [BarChartComponent],
   template: `
     <section class="elements">
-      <div>
-        <app-bar-chart />
-      </div>
+      <app-bar-chart />
     </section>
   `,
-  styleUrl: './page-with-deferrable.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PageWithDeferrableComponent {}
