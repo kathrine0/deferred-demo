@@ -4,7 +4,7 @@ import { LoadingComponent } from '../../components/loading/loading.component';
 import { PlaceholderComponent } from '../../components/placeholder/placeholder.component';
 
 @Component({
-  selector: 'app-on-interaction',
+  selector: 'app-on-hover',
   standalone: true,
   imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
   template: `

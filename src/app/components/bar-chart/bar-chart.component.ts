@@ -1,4 +1,5 @@
 import {
+  afterNextRender,
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
@@ -27,16 +28,15 @@ import {
   >`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BarChartComponent implements AfterViewInit {
+export class BarChartComponent {
   canvasElement = viewChild<ElementRef<HTMLCanvasElement>>('canvasElement');
   chart?: any;
 
   constructor() {
-    Chart.register(BarController, BarElement, CategoryScale, LinearScale);
-  }
-
-  ngAfterViewInit(): void {
-    this.createBarChart();
+    afterNextRender(() => {
+      Chart.register(BarController, BarElement, CategoryScale, LinearScale);
+      this.createBarChart();
+    });
   }
 
   private generateData() {
