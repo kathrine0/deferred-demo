@@ -1,10 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-error',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-error',
+    imports: [],
+    template: `
     <div class="error">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +21,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       <span>Loading error!</span>
     </div>
   `,
-  styleUrl: './error.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrl: './error.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ErrorComponent {}

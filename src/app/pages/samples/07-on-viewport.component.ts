@@ -4,10 +4,9 @@ import { LoadingComponent } from '../../components/loading/loading.component';
 import { PlaceholderComponent } from '../../components/placeholder/placeholder.component';
 
 @Component({
-  selector: 'app-on-viewport',
-  standalone: true,
-  imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
-  template: `
+    selector: 'app-on-viewport',
+    imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
+    template: `
     <section class="elements">
       <div class="push">
         @defer (on viewport) {
@@ -20,6 +19,6 @@ import { PlaceholderComponent } from '../../components/placeholder/placeholder.c
       </div>
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OnViewportComponent {}

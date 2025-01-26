@@ -3,10 +3,9 @@ import { BarChartComponent } from '../../components/bar-chart/bar-chart.componen
 import { LoadingComponent } from '../../components/loading/loading.component';
 
 @Component({
-  selector: 'app-loading-with-params',
-  standalone: true,
-  imports: [BarChartComponent, LoadingComponent],
-  template: `
+    selector: 'app-loading-with-params',
+    imports: [BarChartComponent, LoadingComponent],
+    template: `
     <section class="elements">
       @defer {
         <app-bar-chart />
@@ -15,6 +14,6 @@ import { LoadingComponent } from '../../components/loading/loading.component';
       }
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoadingWithParamsComponent {}

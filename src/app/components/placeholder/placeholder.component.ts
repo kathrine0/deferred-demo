@@ -6,10 +6,9 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-placeholder',
-  standalone: true,
-  imports: [],
-  template: `<div class="placeholder">
+    selector: 'app-placeholder',
+    imports: [],
+    template: `<div class="placeholder">
     <svg
       fill="gray"
       stroke="gray"
@@ -24,9 +23,8 @@ import {
     </svg>
     <div class="placeholder-text"><ng-content></ng-content></div>
   </div> `,
-
-  styleUrl: './placeholder.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrl: './placeholder.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PlaceholderComponent {
   width = input(300);

@@ -16,16 +16,15 @@ import {
 } from 'chart.js';
 
 @Component({
-  selector: 'app-bar-chart',
-  standalone: true,
-  imports: [],
-  template: `<canvas
+    selector: 'app-bar-chart',
+    imports: [],
+    template: `<canvas
     [style.height]="'100%'"
     [style.width]="'100%'"
     #canvasElement
     >{{ chart }}</canvas
   >`,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BarChartComponent implements AfterViewInit {
   canvasElement = viewChild<ElementRef<HTMLCanvasElement>>('canvasElement');

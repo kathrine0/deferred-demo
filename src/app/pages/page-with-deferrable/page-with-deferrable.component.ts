@@ -3,10 +3,9 @@ import { BarChartComponent } from '../../components/bar-chart/bar-chart.componen
 import { LoadingComponent } from '../../components/loading/loading.component';
 import { PlaceholderComponent } from '../../components/placeholder/placeholder.component';
 @Component({
-  selector: 'app-page-with-deferrable',
-  standalone: true,
-  imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
-  template: `
+    selector: 'app-page-with-deferrable',
+    imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
+    template: `
     <section class="elements">
       @defer (on interaction) {
         <app-bar-chart />
@@ -17,6 +16,6 @@ import { PlaceholderComponent } from '../../components/placeholder/placeholder.c
       }
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PageWithDeferrableComponent {}
