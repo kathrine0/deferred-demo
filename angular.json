@@ -33,12 +33,7 @@
             "loader": {
               ".jpg": "file"
             },
-            "statsJson": true,
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "statsJson": true
           },
           "configurations": {
             "production": {
