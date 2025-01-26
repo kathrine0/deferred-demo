@@ -8,11 +8,10 @@ import { toObservable } from '@angular/core/rxjs-interop';
 import { filter, take } from 'rxjs';
 
 @Component({
-  selector: 'app-count-down',
-  standalone: true,
-  imports: [],
-  template: `<h1>{{ currentCount() }}</h1>`,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-count-down',
+    imports: [],
+    template: `<h1>{{ currentCount() }}</h1>`,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CountDownComponent {
   count = input<number>();

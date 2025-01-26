@@ -5,10 +5,9 @@ import { PlaceholderComponent } from '../../components/placeholder/placeholder.c
 import { PolarChartComponent } from '../../components/polar-chart/polar-chart.component';
 
 @Component({
-  selector: 'app-multiple-blocks',
-  standalone: true,
-  imports: [ BarChartComponent, LoadingComponent, PolarChartComponent, PlaceholderComponent ],
-  template: `
+    selector: 'app-multiple-blocks',
+    imports: [BarChartComponent, LoadingComponent, PolarChartComponent, PlaceholderComponent],
+    template: `
     <section class="elements">
       <button (click)="customCondition = !customCondition">
         Toggle custom condition
@@ -31,7 +30,7 @@ import { PolarChartComponent } from '../../components/polar-chart/polar-chart.co
       }
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MultipleBlocksComponent {
   customCondition = false;

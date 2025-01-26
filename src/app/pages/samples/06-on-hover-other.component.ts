@@ -4,10 +4,9 @@ import { LoadingComponent } from '../../components/loading/loading.component';
 import { PlaceholderComponent } from '../../components/placeholder/placeholder.component';
 
 @Component({
-  selector: 'app-on-hover-other',
-  standalone: true,
-  imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
-  template: `
+    selector: 'app-on-hover-other',
+    imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
+    template: `
     <section class="elements">
       <span #trigger>Trigger</span>
       @defer (on hover(trigger)) {
@@ -19,6 +18,6 @@ import { PlaceholderComponent } from '../../components/placeholder/placeholder.c
       }
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OnHoverOtherComponent {}

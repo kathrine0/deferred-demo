@@ -5,10 +5,9 @@ import { LoadingComponent } from '../../components/loading/loading.component';
 import { PlaceholderComponent } from '../../components/placeholder/placeholder.component';
 
 @Component({
-  selector: 'app-error-block',
-  standalone: true,
-  imports: [ BarChartComponent, LoadingComponent, ErrorComponent, PlaceholderComponent],
-  template: `
+    selector: 'app-error-block',
+    imports: [BarChartComponent, LoadingComponent, ErrorComponent, PlaceholderComponent],
+    template: `
     <section class="elements">
       <button (click)="customCondition = !customCondition">
         Toggle custom condition
@@ -24,7 +23,7 @@ import { PlaceholderComponent } from '../../components/placeholder/placeholder.c
       }
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ErrorBlockComponent {
   customCondition = false;

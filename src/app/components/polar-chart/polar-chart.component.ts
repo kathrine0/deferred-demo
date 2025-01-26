@@ -9,11 +9,10 @@ import { colorsMap } from '../../utils/colors';
 import { getRandomElements, getRandomNumber } from '../../utils/random';
 
 @Component({
-  selector: 'app-polar-chart',
-  standalone: true,
-  imports: [],
-  template: `<canvas #canvasElement>{{ chart }}</canvas>`,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-polar-chart',
+    imports: [],
+    template: `<canvas #canvasElement>{{ chart }}</canvas>`,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PolarChartComponent implements AfterViewInit {
   canvasElement = viewChild<ElementRef<HTMLCanvasElement>>('canvasElement');

@@ -4,10 +4,9 @@ import { CountDownComponent } from '../../components/count-down/count-down.compo
 import { LoadingComponent } from '../../components/loading/loading.component';
 
 @Component({
-  selector: 'app-on-timer',
-  standalone: true,
-  imports: [BarChartComponent, LoadingComponent, CountDownComponent],
-  template: `
+    selector: 'app-on-timer',
+    imports: [BarChartComponent, LoadingComponent, CountDownComponent],
+    template: `
     <section class="elements">
       @defer (on timer(5s)) {
         <app-bar-chart />
@@ -18,7 +17,7 @@ import { LoadingComponent } from '../../components/loading/loading.component';
       }
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OnTimerComponent {}
 

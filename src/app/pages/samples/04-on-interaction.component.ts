@@ -4,10 +4,9 @@ import { LoadingComponent } from '../../components/loading/loading.component';
 import { PlaceholderComponent } from '../../components/placeholder/placeholder.component';
 
 @Component({
-  selector: 'app-on-interaction',
-  standalone: true,
-  imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
-  template: `
+    selector: 'app-on-interaction',
+    imports: [BarChartComponent, LoadingComponent, PlaceholderComponent],
+    template: `
     <section class="elements">
       @defer(on interaction) {
         <app-bar-chart />
@@ -18,6 +17,6 @@ import { PlaceholderComponent } from '../../components/placeholder/placeholder.c
       }
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OnInteractionComponent {}

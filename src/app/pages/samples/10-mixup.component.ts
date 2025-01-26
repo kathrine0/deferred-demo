@@ -4,10 +4,9 @@ import { CountDownComponent } from '../../components/count-down/count-down.compo
 import { LoadingComponent } from '../../components/loading/loading.component';
 
 @Component({
-  selector: 'app-mixup',
-  standalone: true,
-  imports: [BarChartComponent, LoadingComponent, CountDownComponent],
-  template: `
+    selector: 'app-mixup',
+    imports: [BarChartComponent, LoadingComponent, CountDownComponent],
+    template: `
     <section class="elements">
       <button (click)="customCondition = !customCondition">
         Toggle custom condition
@@ -21,7 +20,7 @@ import { LoadingComponent } from '../../components/loading/loading.component';
       }
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MixupComponent {
   customCondition = false;
