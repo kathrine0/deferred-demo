@@ -1,20 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { BarChartComponent } from '../../components/bar-chart/bar-chart.component';
-import { PlaceholderComponent } from "../../components/placeholder/placeholder.component";
-import { LoadingComponent } from "../../components/loading/loading.component";
 @Component({
   selector: 'app-page-with-deferrable',
   standalone: true,
-  imports: [BarChartComponent, PlaceholderComponent, LoadingComponent],
+  imports: [BarChartComponent],
   template: `
     <section class="elements">
-      @defer (on interaction) {
-        <app-bar-chart />
-      } @placeholder {
-        <app-placeholder />
-      } @loading {
-        <app-loading />
-      }
+      <app-bar-chart />
     </section>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

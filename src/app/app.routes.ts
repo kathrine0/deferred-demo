@@ -14,6 +14,7 @@ import { ErrorBlockComponent } from './pages/samples/11-error-block.component';
 import { MultipleBlocksComponent } from './pages/samples/12-multiple-blocks.component';
 import { PrefetchComponent } from './pages/samples/13-prefetch.component';
 import { SampleHostComponent } from './pages/samples/sample-host.component';
+import { PageWithDeferrableComponent } from './pages/page-with-deferrable/page-with-deferrable.component';
 
 export const routes: Routes = [
   {
@@ -29,10 +30,7 @@ export const routes: Routes = [
   },
   {
     path: 'page-with-deferrable',
-    loadComponent: () =>
-      import(
-        './pages/page-with-deferrable/page-with-deferrable.component'
-      ).then((c) => c.PageWithDeferrableComponent),
+    component: PageWithDeferrableComponent,
   },
   {
     path: 'samples',
