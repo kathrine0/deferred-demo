@@ -17,6 +17,11 @@ import { SampleHostComponent } from './pages/samples/sample-host.component';
 
 export const routes: Routes = [
   {
+    path: '',
+    component: EagerPageComponent,
+    pathMatch: 'full',
+  },
+  {
     path: 'eager-page',
     component: EagerPageComponent,
   },
@@ -36,7 +41,10 @@ export const routes: Routes = [
   },
   {
     path: 'samples',
-    component: SampleHostComponent,
+    loadComponent: () =>
+      import('./pages/samples/sample-host.component').then(
+        (c) => c.SampleHostComponent,
+      ),
     children: [
       {
         path: '1',
